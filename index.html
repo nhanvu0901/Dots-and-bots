@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+    <h1 class="heading">DOTS AND BOTS</h1>
+<div id="container">
+    
+    <div id="sidebar">
+
+            <h2>Chỉnh skin cho board </h2>
+                <div class="group">
+                    <label class="label">Chỉnh màu bảng game</label>
+                    <select id="board-color" name="boards" >
+                        <option value="cornsilk">Cornsilk</option>
+                        <option value="#EF5D39">Orange</option>
+                        <option value="#29F3F3">Blue</option>
+                        <option value="purple">Purple</option>
+                        <option value="#444">Grey</option>
+                    </select> 
+                </div>       
+
+                <div class="group">
+                    <label class="label">Chỉnh lề ngoài của bảng game</label>
+                    <select id="border-color" name="border">
+                        <option value="cornsilk">Cornsilk</option>
+                        <option value="#EF5D39">Orange</option>
+                        <option value="#29F3F3">Blue</option>
+                        <option value="purple">Purple</option>
+                        <option value="#444">Grey</option>
+                    </select>
+                </div>
+
+                <div class="group">
+                    <label class="label">Chỉnh ô chấm</label>
+                    <select id="dot-color" name="border">
+                        <option value="sienna">Sienna</option>
+                        <option value="#EF5D39">Orange</option>
+                        <option value="#29F3F3">Blue</option>
+                        <option value="purple">Purple</option>
+                        <option value="#444">Grey</option>
+                    </select>
+                </div>      
+                
+                <div class="group">
+                    <label class="label">Chỉnh số cột/dòng của bảng</label>
+                    <input type="text" id="number">
+                </div>  
+
+
+                <!-- slide showw image -->
+            <div id="slider">
+                <label>Chọn phông nền cho trò chơi</label>
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img id="wallpaper" src="./assets/pic1.png">
+                    <div class="text">Hình nền 1</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img id="wallpaper" src="./assets/pic2.png">
+                    <div class="text">Hình nền 2</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img id="wallpaper" src="./assets/pic3.png">
+                    <div class="text">Hình nền 3</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img id="wallpaper" src="./assets/pic4.png">
+                    <div class="text">Hình nền 4</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img id="wallpaper" src="./assets/pic5.jpg">
+                    <div class="text">Hình nền 5</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a id="arrow" class="arrow-prev" >&#10094;</a>
+                <a id="arrow" class="arrow-next" >&#10095;</a>
+
+                 
+            </div>  
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        
+           
+            
+
+            <a  class="button" id="button">Nhập</a>
+        
+       
+        </div>
+
+    <canvas id="canva"></canvas>
+</div>
+
+   
+    <script src="main.js"></script>
+</body>
+</html>
